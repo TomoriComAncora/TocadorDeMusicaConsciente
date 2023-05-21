@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/seekVolume"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_play"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFEB3B"
+        android:contentDescription="play"
+        android:padding="17dp"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_play"
+        app:iconSize="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/bt_pause"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekVolume" />
+
+    <Button
+        android:id="@+id/bt_pause"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFEB3B"
+        android:contentDescription="pause"
+        android:padding="17dp"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_pause"
+        app:iconSize="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/bt_stop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt_play"
+        app:layout_constraintTop_toBottomOf="@+id/seekVolume" />
+
+    <Button
+        android:id="@+id/bt_stop"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="#FFEB3B"
+        android:contentDescription="stop"
+        android:padding="17dp"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_stop"
+        app:iconSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt_pause"
+        app:layout_constraintTop_toBottomOf="@+id/seekVolume" />
+</androidx.constraintlayout.widget.ConstraintLayout>
